@@ -32,7 +32,7 @@
     constructs "^2.0.0"
     minimatch "^3.0.4"
 
-"@aws-cdk/aws-apigateway@1.31.0", "@aws-cdk/aws-apigateway@^1.31.0":
+"@aws-cdk/aws-apigateway@1.31.0", "@aws-cdk/aws-apigateway@^1.20.0", "@aws-cdk/aws-apigateway@^1.31.0":
   version "1.31.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-apigateway/-/aws-apigateway-1.31.0.tgz#2845bd9509b2581384e8f6c6e952fd7a906c41d0"
   integrity sha512-mZcir5rQlmaEY5Kcppnl28NBmhwO98XD6GKBWmqNQP0uSmflrxOI99DZyoDK+Zie3yJxGUTSqbs7aZAK6+XDKA==
@@ -162,7 +162,7 @@
     "@aws-cdk/core" "1.31.0"
     constructs "^2.0.0"
 
-"@aws-cdk/aws-dynamodb@^1.31.0":
+"@aws-cdk/aws-dynamodb@^1.20.0", "@aws-cdk/aws-dynamodb@^1.31.0":
   version "1.31.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-dynamodb/-/aws-dynamodb-1.31.0.tgz#b2e1e690f7e7289e101c08cfe44de45730233f85"
   integrity sha512-WbhIjzFJCsbZ6mRHWkq8iMDDmQ+l7sipQzlSN8t/enr4WjZ3yeM5Sik5D4APrMuwqpy62MPmXGC5WIFUYgZ/qA==
@@ -365,7 +365,7 @@
     "@aws-cdk/cx-api" "1.30.0"
     constructs "^1.1.2"
 
-"@aws-cdk/aws-lambda@1.31.0", "@aws-cdk/aws-lambda@^1.31.0":
+"@aws-cdk/aws-lambda@1.31.0", "@aws-cdk/aws-lambda@^1.20.0", "@aws-cdk/aws-lambda@^1.31.0":
   version "1.31.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-lambda/-/aws-lambda-1.31.0.tgz#e5608573044a4a36332da138f357c3b8ec6d6c26"
   integrity sha512-OlnxB+IHH0VQNR2hzgZ5Vg277NTP4PJe18XjLsBorN/gujMtVWfXhOuB02+hGr4KOyJGTlCMiB14cZFBWd0pEA==
@@ -668,7 +668,7 @@
     "@aws-cdk/cx-api" "1.30.0"
     constructs "^1.1.2"
 
-"@aws-cdk/core@1.31.0":
+"@aws-cdk/core@1.31.0", "@aws-cdk/core@^1.20.0":
   version "1.31.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/core/-/core-1.31.0.tgz#677b23d047df5df6b5f38b9579662c3629827c1c"
   integrity sha512-HkrcYTCDlS4vjPRtibY70ZhuOAJz3qF+Wp2W/gy+zXGygy0U7bGC/2xwz8555LnYZTUeLEKghQgAFWGtatYEmw==
@@ -1641,6 +1641,16 @@ cdk-assets@1.30.0:
     aws-sdk "^2.640.0"
     glob "^7.1.6"
     yargs "^15.3.1"
+
+cdk-dynamo-table-viewer@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/cdk-dynamo-table-viewer/-/cdk-dynamo-table-viewer-3.1.2.tgz#82ebcd337591e548d1a384e73ecfe713e408e7a3"
+  integrity sha512-BPJqYj/CFOE02ZPx3bdxj/yAvAPH0TJHPinJGGX1hUtO7x5pgI7z4svnSsyfCz8UazMTKQJLXh7Rb2aXgBAuJQ==
+  dependencies:
+    "@aws-cdk/aws-apigateway" "^1.20.0"
+    "@aws-cdk/aws-dynamodb" "^1.20.0"
+    "@aws-cdk/aws-lambda" "^1.20.0"
+    "@aws-cdk/core" "^1.20.0"
 
 chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.2:
   version "2.4.2"
